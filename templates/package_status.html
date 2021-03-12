@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Package Stasusessss</title>
+</head>
+
+<body>
+  {% for package in packages %}
+  <div>
+    <h1>
+      {{package.sender}}
+    </h1>
+    <h2>
+      {{package.recipient}}
+    </h2>
+    <p>
+      <em>
+        Package Origin
+      </em>
+      {{package.origin}}
+      |
+      <em>
+        Package Destination
+      </em>
+      {{package.destination}}
+      |
+      <em>
+        Package Location
+      </em>
+      {{package.location}}
+    </p>
+  </div>
+  {% endfor %}
+</body>
+
+</html>
